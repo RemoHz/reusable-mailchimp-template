@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mailchimp Email Template</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+    table{border-collapse: collapse !important;}
+    body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #F8F8F8 !important; font-family: 'Source Sans Pro', Helvetica, sans-serif;}
+
+
+    /* Text styles */
+    h1 {
+        margin: 10px 0;
+        color: #fff;
+        font-size: 3.5em;
+        word-spacing: 5px;
+        line-height: 1em;
+    }
+
+    h3 {
+        margin: 0 0 15px;
+        color: #FB7200;
+        font-size: 1.6em;
+        line-height: 1em;
+    }
+
+    h1, h3, p {
+        -webkit-text-size-adjust: none;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: #FB7200;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5em;
+        margin: 0 0 20px;
+        color: #565656;
+    }
+
+    .td-link a {
+        text-decoration: none; 
+        color: #FB7200; 
+        font-size: 1.2em; 
+        font-weight: 600; 
+        line-height: 1em;
+    }
+
+    .td-banner-img img {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .td-img img {
+        border-radius: 0 0 12px 12px;
+    }
+
+    .td-button-link a {
+        text-transform: uppercase; 
+        font-size: 16px; 
+        letter-spacing: 2px; 
+        color: #ffffff; 
+        text-decoration: none; 
+        border-radius: 3px; 
+        display: inline-block;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 700px) {
+
+        p {
+            font-size: 18px !important;
+        }
+
+        .post-address {
+            font-size: 18px !important;
+        }
+
+        .copy-right {
+            font-size: 18px !important;
+        }
+
+        .unsubscribe {
+            font-size: 18px !important;
+        }
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        .mobile-hide {
+            display: none !important;
+        }
+
+        .img-max {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        .responsive-table {
+            width: 100% !important;
+        }
+    }
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+</head>
+<body style="margin: 0 !important; padding: 0 !important;">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+    Mailchimp Email Template
+</div>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <!-- Header -->
+    <tr>
+        <td bgcolor="#F8F8F8" align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+            <tr>
+            <td align="left" valign="middle" width="700">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <!-- Logo -->
+                    <td mc:edit="logo_link" align="left" valign="middle" style="padding: 30px 0;" class="logo">
+                        <a href="#" target="_blank">
+                            <img alt="Logo" src="http://via.placeholder.com/222x51/F8F8F8?text=Logo" style="display: block; color: #F8F8F8; font-size: 16px;" border="0">
+                        </a>
+                    </td>
+                    <!-- Social Share -->
+                    <td mc:edit="social_section" align="right" valign="middle" style="padding: 30px 0">
+                        <a href="#" title="Web" style="display:inline-block; margin:5px; color:#1a1a1a;font-weight:normal;" target="_blank" mc:edit="social_facebook">
+                            <img src="email-icons/web.png" alt="">
+                        </a>
+                        <a href="#" title="Facebook" style="display:inline-block; margin:5px; color:#1a1a1a;font-weight:normal;" target="_blank" mc:edit="social_facebook">
+                            <img src="email-icons/facebook.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <!-- ./ Header -->
+
+    <!-- Top Banner-->
+    <tr>
+        <td bgcolor="#F8F8F8" align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+            <tr>
+            <td align="left" valign="middle" width="700">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td align="center" valign="middle" style="padding: 25px 0; background-color: #FB7200; border-radius:12px;">
+                        <!-- Top Heading -->
+                        <h1 mc:edit="newsletter_heading">Heading</h1>
+                        <!-- Sub heading -->
+                        <p mc:edit="newsletter_subheading" style="text-transform: uppercase; color: #fff; margin: 15px 0 5px !important; font-size: 18px;">
+                            Sub Heading
+                        </p>
+                        <!-- Date -->
+                        <p mc:edit="newsletter_date" style="text-transform: uppercase; color: #fff; margin: 0 !important; font-weight: 300;">
+                            11 September 2017
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <!-- ./ Top Banner -->
+
+    <!-- Welcome -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="welcome section">
+        <td bgcolor="#F8F8F8" align="center">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+            <tr>
+            <td align="left" valign="middle" width="700">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td align="left" valign="middle" style="padding: 30px 50px 10px; background-color: #fff; border-radius:12px;">
+                        <!-- Top Heading -->
+                        <h3 mc:edit="welcome_heading">Welcome</h3>
+                        <div mc:edit="welcome_content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <!-- ./ Welcome -->
+
+    <!-- Repeatable Heading Section -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="heading">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <!-- Heading -->
+                <tr mc:hideable>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr>
+                                <td align="center" valign="middle" style="padding: 30px 50px; background-color: #F8F8F8; border-radius:12px;">
+                                    <span mc:edit="section_heading" style="text-transform: uppercase; font-size: 18px; font-weight: 300; letter-spacing: 3px; word-spacing: 3px;">
+                                        Section Heading
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+                <!-- ./ Heading -->
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Heading Section -->
+
+    <!-- Repeatable Block With Link -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="block with links section">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr mc:repeatable="links_block" mc:hideable>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr style="border-bottom: 1px solid #F4F4F4;">
+                                <td align="left" valign="middle" style="padding: 30px 50px 0; background-color: #fff; border-radius:12px 12px 0 0;">
+                                    <!-- Top Heading -->
+                                    <h3 mc:edit="links_block_heading" style="margin-bottom: 10px !important;">Block Heading</h3>
+                                    <p mc:edit="links_block_subheading">Block Sub Heading</p>
+                                </td>
+                            </tr>
+                            <tr mc:repeatable="news_block_link" mc:hideable style="border-bottom: 1px solid #F4F4F4;">
+                                <td align="left" valign="middle" style="padding: 23px 50px; background-color: #fff;">
+                                    <!-- Link -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td mc:edit="links_block_content_left" mc:hideable align="left" valign="middle" padding-right: 80px; class="td-link">
+                                                <a href="#">
+                                                    Link Text
+                                                </a>
+                                            </td>
+                                            <td mc:edit="links_block_content_right" mc:hideable align="right" valign="middle">
+                                                <a href="#" style="text-decoration: none;">
+                                                    <img src="email-icons/arrow-right.png" alt="">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td align="left" valign="middle" style="padding: 30px 50px 0; background-color: #fff; border-radius:0 0 12px 12px;">
+                                    <p mc:edit="links_block_footer">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Block With Link -->
+
+    <!-- Repeatable Block With Image Banner -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="block with image banner section">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr>
+                                <td align="left" valign="middle" style="background-color: #fff; border-radius:12px 12px 0 0;" class="td-banner-img">
+                                    <!-- Image -->
+                                    <img mc:edit="block_with_image_banner_img" src="http://via.placeholder.com/700x310" alt="" class="img-max">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" style="padding: 30px 50px 0; background-color: #fff;">
+                                    <!-- Content -->
+                                    <h3 mc:edit="block_with_image_banner_heading">Heading</h3>
+                                    <p mc:edit="block_with_image_banner_content">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td align="left" valign="middle" style="padding: 0px 50px; background-color: #fff;">
+                                    <!-- Button Link -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left">
+                                                <table border="0" cellspacing="0" cellpadding="15">
+                                                    <tr>
+                                                        <td mc:edit="block_with_image_banner_link" align="center" style="border-radius: 5px;" bgcolor="#FB7200" class="td-button-link">
+                                                            <a href="#">Link Text</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" height="30" style="background-color: #fff; border-radius:0 0 12px 12px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Block With Image Banner -->
+
+    <!-- Repeatable Block With Video Banner -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="block with video banner section">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr>
+                                <td mc:edit="block_with_video_banner_img" align="left" valign="middle" style="background-color: #fff; border-radius:12px 12px 0 0;" class="td-banner-img">
+                                    <!-- Video Banner -->
+                                    <a href="https://www.youtube.com/watch?v=Mxesac55Puo" target="_blank">
+                                        <img src="http://via.placeholder.com/700x310" alt="" class="img-max">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" style="padding: 30px 50px 10px; background-color: #fff; border-radius:0 0 12px 12px;">
+                                    <!-- Content -->
+                                    <h3 mc:edit="block_with_video_banner_heading">Heading</h3>
+                                    <p mc:edit="block_with_video_banner_content">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td align="left" valign="middle" style="padding: 0px 50px; background-color: #fff;">
+                                    <!-- Button Link -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left">
+                                                <table border="0" cellspacing="0" cellpadding="15">
+                                                    <tr>
+                                                        <td mc:edit="block_with_video_banner_link" align="center" style="border-radius: 5px;" bgcolor="#FB7200" class="td-button-link">
+                                                            <a href="#">Link Text</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" height="30" style="background-color: #fff; border-radius:0 0 12px 12px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Block With Video Banner -->
+
+    <!-- Repeatable Block With Normal Text -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="block with normal text">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr>
+                                <td align="left" valign="middle" style="padding: 30px 50px 10px; background-color: #fff; border-radius:12px;">
+                                    <h3 mc:edit="block_with_normal_text_heading">Heading</h3>
+                                    <p mc:edit="block_with_normal_text_content">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td align="left" valign="middle" style="padding: 0px 50px; background-color: #fff;">
+                                    <!-- Button Link -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left">
+                                                <table border="0" cellspacing="0" cellpadding="15">
+                                                    <tr>
+                                                        <td mc:edit="block_with_normal_text_link" align="center" style="border-radius: 5px;" bgcolor="#FB7200" class="td-button-link">
+                                                            <a href="#">Link Text</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="middle" height="30" style="background-color: #fff; border-radius:0 0 12px 12px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Block With Normal Text -->
+
+    <!-- Repeatable Block With Text and Image -->
+    <tr mc:repeatable="sections" mc:hideable mc:variant="block with text and image">
+        <td align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                <tr>
+                    <td bgcolor="#F8F8F8" align="center">
+                        <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                        <tr>
+                        <td align="left" valign="middle" width="700">
+                        <![endif]-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 700px;" class="wrapper">
+                            <tr>
+                                <td align="left" valign="middle" style="padding: 30px 50px 10px; background-color: #fff; border-radius:12px 12px 0 0;">
+                                    <!-- Top Heading -->
+                                    <h3 mc:edit="block_with_text_image_heading">Heading</h3>
+                                    <p mc:edit="block_with_text_image_content">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr mc:hideable>
+                                <td align="left" valign="middle" style="padding: 0px 50px 30px; background-color: #fff;">
+                                    <!-- Button Link -->
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td align="left">
+                                                <table border="0" cellspacing="0" cellpadding="15">
+                                                    <tr>
+                                                        <td mc:edit="block_with_text_image_link" align="center" style="border-radius: 5px;" bgcolor="#FB7200" class="td-button-link">
+                                                            <a href="#">Link Text</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="border-radius: 0 0 12px 12px; background-color: #fff;" class="td-img">
+                                    <img mc:edit="block_with_text_image_img" src="http://via.placeholder.com/700x310?text=Image" alt="" class="img-max">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td bgcolor="#F8F8F8" align="center" height="30"></td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <!-- ./ Repeatable Block With Text and Image -->
+
+    <!-- Footer -->
+    <tr>
+        <td bgcolor="#F8F8F8" align="center" style="padding: 0 0px 20px;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+            <tr>
+            <td align="left" valign="middle" width="700">
+            <![endif]-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 700px; background-color: #FB7200; border-radius: 12px;" class="responsive-table">
+                <tr style="border-bottom: 1px solid #FC8E33;">
+                    <!-- Copy right -->
+                    <td align="center" style="line-height: 18px; color:#fff; padding: 20px 0;">
+                        <span mc:edit="post_address" class="post-address">Post Address</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="line-height: 18px; color:#fff; padding: 20px 0;">
+                        <span mc:edit="copy_right" style="color: #fff;" class="copy-right">© Copyright</span><br>
+
+                        <a href="*|UNSUB|*" style="display: block; padding: 15px 0 0; color: #FDC1A3; text-decoration: underline;" class="unsubscribe">Unsubscribe</a>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <!-- ./ Footer -->
+</table>
+</body>
+</html>
